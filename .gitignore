@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+*.log
+data/response_times.jsonl
+data/*.db
+data/chroma_medical/
+
+.env
+.venv/
+venv/
+
+.DS_Store
+Thumbs.db

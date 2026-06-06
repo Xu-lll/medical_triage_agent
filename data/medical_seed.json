@@ -1,0 +1,402 @@
+[
+  {
+    "id": "rule_emergency_chest_pain",
+    "category": "triage_rule",
+    "title": "胸痛急诊规则",
+    "department": "急诊科",
+    "severity": "emergency",
+    "keywords": ["胸痛", "胸闷", "出汗", "放射痛", "呼吸困难", "晕厥"],
+    "content": "胸痛伴随大汗、气短、晕厥、持续压榨感，或疼痛放射到左臂、肩背、下颌时，优先建议急诊评估，需排除急性冠脉综合征、肺栓塞等高风险情况。",
+    "source": "https://medlineplus.gov/chestpain.html"
+  },
+  {
+    "id": "rule_stroke_warning",
+    "category": "triage_rule",
+    "title": "卒中预警规则",
+    "department": "急诊科",
+    "severity": "emergency",
+    "keywords": ["口角歪斜", "一侧无力", "说话不清", "突发头痛", "意识障碍", "偏瘫"],
+    "content": "突发一侧肢体无力、面部歪斜、言语不清、视物异常、严重头痛或意识改变时，按急症处理，建议立即拨打急救电话或前往急诊。",
+    "source": "https://www.cdc.gov/stroke/signs-symptoms/index.html"
+  },
+  {
+    "id": "disease_influenza",
+    "category": "disease",
+    "title": "流感",
+    "department": "呼吸内科",
+    "severity": "medium",
+    "keywords": ["发热", "咳嗽", "咽痛", "肌肉酸痛", "乏力", "寒战", "流感"],
+    "content": "流感常表现为突然发热、咳嗽、咽痛、头痛、肌肉酸痛和明显乏力。多数患者可休息、补液、退热对症处理；老人、孕妇、儿童、慢病患者或症状加重者应尽早就医。",
+    "source": "https://www.cdc.gov/flu/signs-symptoms/index.html"
+  },
+  {
+    "id": "disease_common_cold",
+    "category": "disease",
+    "title": "普通感冒",
+    "department": "呼吸内科",
+    "severity": "low",
+    "keywords": ["鼻塞", "流涕", "打喷嚏", "咽痛", "轻微咳嗽", "低热"],
+    "content": "普通感冒多以上呼吸道症状为主，如鼻塞、流涕、喷嚏、咽痛和轻微咳嗽，通常病程较短。建议休息、饮水、观察体温；若高热、气促或症状持续加重，应就医。",
+    "source": "https://medlineplus.gov/commoncold.html"
+  },
+  {
+    "id": "disease_pneumonia_warning",
+    "category": "disease",
+    "title": "肺炎风险",
+    "department": "呼吸内科",
+    "severity": "high",
+    "keywords": ["高热", "咳痰", "胸痛", "气促", "呼吸困难", "血氧低"],
+    "content": "发热、咳嗽咳痰伴气促、胸痛、呼吸困难或血氧下降时，需要考虑肺炎等下呼吸道感染风险，建议尽快到呼吸内科或急诊评估。",
+    "source": "https://www.nhlbi.nih.gov/health/pneumonia/symptoms"
+  },
+  {
+    "id": "disease_gastroenteritis",
+    "category": "disease",
+    "title": "急性胃肠炎",
+    "department": "消化内科",
+    "severity": "medium",
+    "keywords": ["腹泻", "呕吐", "腹痛", "恶心", "发热", "脱水"],
+    "content": "急性胃肠炎常见腹泻、恶心、呕吐、腹部绞痛，可伴低热。重点是补液和观察尿量；若出现血便、持续高热、严重脱水、剧烈腹痛，应及时就医。",
+    "source": "https://medlineplus.gov/gastroenteritis.html"
+  },
+  {
+    "id": "disease_appendicitis_warning",
+    "category": "disease",
+    "title": "阑尾炎风险",
+    "department": "普外科",
+    "severity": "high",
+    "keywords": ["右下腹痛", "转移性腹痛", "发热", "恶心", "反跳痛", "阑尾炎"],
+    "content": "腹痛从上腹或脐周转移到右下腹，伴发热、恶心、压痛或反跳痛时，需要警惕阑尾炎，建议尽快到急诊或普外科评估。",
+    "source": "https://medlineplus.gov/appendicitis.html"
+  },
+  {
+    "id": "disease_migraine",
+    "category": "disease",
+    "title": "偏头痛",
+    "department": "神经内科",
+    "severity": "medium",
+    "keywords": ["偏头痛", "搏动性头痛", "畏光", "恶心", "呕吐", "先兆"],
+    "content": "偏头痛常为反复发作的搏动性头痛，可伴畏光、怕吵、恶心或呕吐。若为突发最严重头痛、伴神经功能缺损或意识改变，应按急症处理。",
+    "source": "https://medlineplus.gov/migraine.html"
+  },
+  {
+    "id": "disease_uti",
+    "category": "disease",
+    "title": "尿路感染",
+    "department": "泌尿外科",
+    "severity": "medium",
+    "keywords": ["尿频", "尿急", "尿痛", "血尿", "腰痛", "发热"],
+    "content": "尿频、尿急、尿痛提示尿路感染可能。若伴发热、寒战、腰痛或血尿，需要尽快就医，评估是否累及上尿路。",
+    "source": "https://medlineplus.gov/urinarytractinfections.html"
+  },
+  {
+    "id": "disease_allergic_rhinitis",
+    "category": "disease",
+    "title": "过敏性鼻炎",
+    "department": "耳鼻喉科",
+    "severity": "low",
+    "keywords": ["鼻痒", "喷嚏", "打喷嚏", "清水鼻涕", "流清水鼻涕", "眼痒", "眼睛痒", "季节性", "过敏"],
+    "content": "反复鼻痒、喷嚏、清水样鼻涕、眼痒，尤其与花粉、尘螨或季节相关时，考虑过敏性鼻炎。可到耳鼻喉科或变态反应科评估过敏原和用药方案。",
+    "source": "https://medlineplus.gov/hayfever.html"
+  },
+  {
+    "id": "drug_acetaminophen",
+    "category": "drug",
+    "title": "对乙酰氨基酚",
+    "department": "药学咨询",
+    "severity": "info",
+    "keywords": ["退烧", "退热", "发热", "止痛", "对乙酰氨基酚"],
+    "content": "对乙酰氨基酚常用于退热和轻中度疼痛。需注意不要与多种复方感冒药重复使用，肝病患者、饮酒者或儿童用药应咨询医生或药师。",
+    "source": "https://medlineplus.gov/druginfo/meds/a681004.html"
+  },
+  {
+    "id": "drug_ibuprofen",
+    "category": "drug",
+    "title": "布洛芬",
+    "department": "药学咨询",
+    "severity": "info",
+    "keywords": ["布洛芬", "退烧", "止痛", "炎症", "关节痛"],
+    "content": "布洛芬可用于发热、疼痛和炎症相关不适。胃溃疡、肾功能问题、抗凝用药、孕晚期等情况需谨慎，具体剂量应遵医嘱或药品说明书。",
+    "source": "https://medlineplus.gov/druginfo/meds/a682159.html"
+  },
+  {
+    "id": "disease_asthma_attack",
+    "category": "disease",
+    "title": "哮喘急性加重",
+    "department": "呼吸内科",
+    "severity": "high",
+    "keywords": ["喘息", "哮喘", "胸闷", "夜间咳嗽", "气短", "呼吸困难"],
+    "content": "反复喘息、胸闷、气短或夜间咳嗽提示哮喘可能。若说话困难、口唇发紫、呼吸明显费力或常规缓解药无效，应尽快急诊。",
+    "source": "https://www.cdc.gov/asthma/signs-symptoms/index.html"
+  },
+  {
+    "id": "disease_copd_exacerbation",
+    "category": "disease",
+    "title": "慢阻肺急性加重",
+    "department": "呼吸内科",
+    "severity": "high",
+    "keywords": ["慢阻肺", "长期吸烟", "咳痰", "气促", "喘憋", "活动后气短"],
+    "content": "长期吸烟或既往慢阻肺患者出现咳嗽咳痰增多、气促加重、喘憋或活动耐量下降时，需要评估慢阻肺急性加重，症状明显时建议急诊或呼吸内科。",
+    "source": "https://medlineplus.gov/copd.html"
+  },
+  {
+    "id": "disease_sinusitis",
+    "category": "disease",
+    "title": "鼻窦炎",
+    "department": "耳鼻喉科",
+    "severity": "medium",
+    "keywords": ["鼻塞", "黄鼻涕", "面部胀痛", "嗅觉下降", "头痛", "鼻窦炎"],
+    "content": "鼻塞、脓性鼻涕、面部胀痛或嗅觉下降持续不缓解时，考虑鼻窦炎。可到耳鼻喉科评估；若高热、眼周肿痛或剧烈头痛需尽快就医。",
+    "source": "https://medlineplus.gov/sinusitis.html"
+  },
+  {
+    "id": "disease_gerd",
+    "category": "disease",
+    "title": "胃食管反流",
+    "department": "消化内科",
+    "severity": "low",
+    "keywords": ["反酸", "烧心", "嗳气", "胸口灼热", "饭后加重", "胃食管反流"],
+    "content": "反酸、烧心、嗳气、胸口灼热且饭后或平卧后加重，常见于胃食管反流。若伴吞咽困难、呕血、黑便或体重明显下降，应尽快就医。",
+    "source": "https://medlineplus.gov/gerd.html"
+  },
+  {
+    "id": "disease_peptic_ulcer",
+    "category": "disease",
+    "title": "消化性溃疡风险",
+    "department": "消化内科",
+    "severity": "medium",
+    "keywords": ["上腹痛", "饥饿痛", "夜间痛", "黑便", "呕血", "胃痛"],
+    "content": "反复上腹痛、饥饿痛或夜间痛提示消化性溃疡可能。若出现黑便、呕血、持续剧痛或头晕乏力，应尽快就医或急诊。",
+    "source": "https://medlineplus.gov/pepticulcer.html"
+  },
+  {
+    "id": "disease_gallstones",
+    "category": "disease",
+    "title": "胆石症风险",
+    "department": "肝胆外科",
+    "severity": "medium",
+    "keywords": ["右上腹痛", "油腻后疼痛", "恶心", "肩背放射", "黄疸", "胆结石"],
+    "content": "右上腹痛，尤其油腻饮食后加重并向肩背部放射，伴恶心或黄疸时，需要考虑胆囊结石或胆道问题，建议肝胆外科或急诊评估。",
+    "source": "https://medlineplus.gov/gallstones.html"
+  },
+  {
+    "id": "disease_pancreatitis_warning",
+    "category": "disease",
+    "title": "急性胰腺炎风险",
+    "department": "急诊科",
+    "severity": "high",
+    "keywords": ["剧烈上腹痛", "背部放射", "呕吐", "饮酒后", "暴食后", "胰腺炎"],
+    "content": "剧烈持续上腹痛并向背部放射，伴恶心呕吐，尤其饮酒或暴食后出现时，需要警惕急性胰腺炎，建议尽快急诊评估。",
+    "source": "https://medlineplus.gov/pancreatitis.html"
+  },
+  {
+    "id": "disease_hypertension_warning",
+    "category": "disease",
+    "title": "高血压危险信号",
+    "department": "心血管内科",
+    "severity": "high",
+    "keywords": ["血压高", "头晕", "头痛", "胸闷", "视物模糊", "高血压"],
+    "content": "血压明显升高伴胸痛、呼吸困难、神经功能异常、视物模糊或剧烈头痛时，需要排查高血压急症。单纯血压偏高可心血管内科随诊。",
+    "source": "https://www.cdc.gov/high-blood-pressure/signs-symptoms/index.html"
+  },
+  {
+    "id": "disease_arrhythmia",
+    "category": "disease",
+    "title": "心律失常风险",
+    "department": "心血管内科",
+    "severity": "medium",
+    "keywords": ["心慌", "心悸", "心跳快", "心跳不齐", "胸闷", "头晕"],
+    "content": "心慌、心悸、心跳不齐或胸闷头晕可能与心律失常有关。若伴晕厥、胸痛、呼吸困难或持续不缓解，应急诊评估。",
+    "source": "https://medlineplus.gov/arrhythmia.html"
+  },
+  {
+    "id": "disease_diabetes_hyperglycemia",
+    "category": "disease",
+    "title": "高血糖与糖尿病风险",
+    "department": "内分泌科",
+    "severity": "medium",
+    "keywords": ["口渴", "多饮", "多尿", "体重下降", "血糖高", "糖尿病"],
+    "content": "明显口渴、多饮、多尿、体重下降或血糖升高提示糖尿病或高血糖风险，建议内分泌科评估。若伴意识改变、呕吐、深大呼吸需急诊。",
+    "source": "https://www.cdc.gov/diabetes/signs-symptoms/index.html"
+  },
+  {
+    "id": "disease_hypoglycemia",
+    "category": "disease",
+    "title": "低血糖",
+    "department": "内分泌科",
+    "severity": "high",
+    "keywords": ["低血糖", "出汗", "手抖", "心慌", "饥饿感", "意识模糊"],
+    "content": "出汗、手抖、心慌、饥饿感、乏力或意识模糊可能提示低血糖，糖尿病用药患者尤其需要注意。意识不清或无法进食时应急诊处理。",
+    "source": "https://medlineplus.gov/ency/article/000386.htm"
+  },
+  {
+    "id": "disease_anxiety_panic",
+    "category": "disease",
+    "title": "焦虑或惊恐发作",
+    "department": "精神心理科",
+    "severity": "medium",
+    "keywords": ["焦虑", "惊恐", "心慌", "濒死感", "手麻", "过度换气"],
+    "content": "突发强烈焦虑、心慌、胸闷、手麻、濒死感或过度换气可见于惊恐发作，但首次出现或伴胸痛、晕厥时仍需排除躯体急症。",
+    "source": "https://medlineplus.gov/anxiety.html"
+  },
+  {
+    "id": "disease_depression_warning",
+    "category": "disease",
+    "title": "抑郁风险",
+    "department": "精神心理科",
+    "severity": "high",
+    "keywords": ["情绪低落", "失眠", "兴趣下降", "自责", "轻生", "抑郁"],
+    "content": "持续情绪低落、兴趣下降、睡眠或食欲改变、自责无望提示抑郁风险。若出现自伤或轻生想法，应立即联系家人、急诊或心理危机热线。",
+    "source": "https://medlineplus.gov/depression.html"
+  },
+  {
+    "id": "disease_dermatitis",
+    "category": "disease",
+    "title": "皮炎湿疹",
+    "department": "皮肤科",
+    "severity": "low",
+    "keywords": ["皮疹", "瘙痒", "红斑", "脱屑", "湿疹", "接触过敏"],
+    "content": "皮肤瘙痒、红斑、丘疹、脱屑或接触某物后加重，常见于皮炎湿疹或接触性过敏。若出现大面积水疱、发热或感染迹象，应尽快就医。",
+    "source": "https://medlineplus.gov/eczema.html"
+  },
+  {
+    "id": "disease_urticaria",
+    "category": "disease",
+    "title": "荨麻疹与严重过敏风险",
+    "department": "皮肤科",
+    "severity": "high",
+    "keywords": ["风团", "荨麻疹", "瘙痒", "嘴唇肿", "喉头紧", "过敏"],
+    "content": "反复风团样皮疹伴瘙痒提示荨麻疹。若出现嘴唇或舌头肿胀、喉头紧、喘憋、头晕，应警惕严重过敏反应并立即急诊。",
+    "source": "https://medlineplus.gov/hives.html"
+  },
+  {
+    "id": "disease_low_back_pain",
+    "category": "disease",
+    "title": "腰背痛",
+    "department": "骨科",
+    "severity": "low",
+    "keywords": ["腰痛", "背痛", "久坐", "弯腰痛", "腿麻", "腰椎"],
+    "content": "腰背痛常与肌肉劳损、姿势或腰椎问题有关。若伴下肢无力、大小便异常、外伤后剧痛、发热或肿瘤病史，应尽快就医。",
+    "source": "https://medlineplus.gov/backpain.html"
+  },
+  {
+    "id": "disease_sprain_fracture",
+    "category": "disease",
+    "title": "扭伤或骨折风险",
+    "department": "骨科",
+    "severity": "medium",
+    "keywords": ["扭伤", "外伤", "肿胀", "畸形", "不能负重", "骨折"],
+    "content": "外伤后局部疼痛、肿胀、活动受限多见于扭伤；若出现畸形、明显压痛、不能负重或麻木，需要排查骨折，建议骨科或急诊。",
+    "source": "https://medlineplus.gov/fractures.html"
+  },
+  {
+    "id": "disease_conjunctivitis",
+    "category": "disease",
+    "title": "结膜炎",
+    "department": "眼科",
+    "severity": "low",
+    "keywords": ["眼红", "眼痒", "流泪", "分泌物", "畏光", "结膜炎"],
+    "content": "眼红、眼痒、流泪或分泌物增多提示结膜炎可能。若视力下降、明显眼痛、畏光或外伤后眼红，应尽快眼科就诊。",
+    "source": "https://medlineplus.gov/pinkeye.html"
+  },
+  {
+    "id": "disease_otitis_media",
+    "category": "disease",
+    "title": "中耳炎",
+    "department": "耳鼻喉科",
+    "severity": "medium",
+    "keywords": ["耳痛", "耳闷", "听力下降", "发热", "耳流脓", "中耳炎"],
+    "content": "耳痛、耳闷、听力下降或发热，尤其感冒后出现，提示中耳炎可能。耳流脓、剧痛或儿童高热应及时耳鼻喉科就诊。",
+    "source": "https://medlineplus.gov/earinfections.html"
+  },
+  {
+    "id": "disease_dysmenorrhea",
+    "category": "disease",
+    "title": "痛经",
+    "department": "妇科",
+    "severity": "low",
+    "keywords": ["痛经", "月经痛", "下腹痛", "经期", "恶心", "腰酸"],
+    "content": "经期下腹痛、腰酸、恶心可见于痛经。若疼痛突然明显加重、伴发热、异常出血或可能妊娠，应尽快妇科或急诊评估。",
+    "source": "https://medlineplus.gov/menstruation.html"
+  },
+  {
+    "id": "disease_vaginitis",
+    "category": "disease",
+    "title": "阴道炎",
+    "department": "妇科",
+    "severity": "medium",
+    "keywords": ["外阴瘙痒", "白带异常", "异味", "灼痛", "阴道炎", "尿痛"],
+    "content": "外阴瘙痒、白带异常、异味、灼痛或尿痛提示阴道炎或泌尿生殖道感染可能，建议妇科检查，不建议自行反复用药。",
+    "source": "https://medlineplus.gov/vaginitis.html"
+  },
+  {
+    "id": "disease_child_fever",
+    "category": "triage_rule",
+    "title": "儿童发热分诊",
+    "department": "儿科",
+    "severity": "medium",
+    "keywords": ["儿童", "宝宝", "发烧", "高热", "精神差", "抽搐"],
+    "content": "儿童发热需要结合年龄、精神状态、进食饮水和伴随症状判断。小婴儿发热、精神差、抽搐、呼吸困难或持续高热应尽快儿科或急诊。",
+    "source": "https://medlineplus.gov/fever.html"
+  },
+  {
+    "id": "disease_hand_foot_mouth",
+    "category": "disease",
+    "title": "手足口病",
+    "department": "儿科",
+    "severity": "medium",
+    "keywords": ["手足口", "口腔疱疹", "手心皮疹", "脚心皮疹", "儿童发热", "拒食"],
+    "content": "儿童发热伴口腔疱疹、手心或脚心皮疹时，需要考虑手足口病。若精神差、嗜睡、抽搐、呼吸异常或持续高热，应尽快就医。",
+    "source": "https://www.cdc.gov/hand-foot-mouth/signs-symptoms/index.html"
+  },
+  {
+    "id": "disease_covid_like",
+    "category": "disease",
+    "title": "新冠样呼吸道感染",
+    "department": "呼吸内科",
+    "severity": "medium",
+    "keywords": ["发热", "干咳", "咽痛", "嗅觉下降", "乏力", "新冠"],
+    "content": "发热、干咳、咽痛、乏力或嗅味觉改变可见于新冠等呼吸道感染。高龄、慢病、孕妇或出现气促、胸痛、血氧下降时应尽快就医。",
+    "source": "https://www.cdc.gov/covid/signs-symptoms/index.html"
+  },
+  {
+    "id": "disease_anemia",
+    "category": "disease",
+    "title": "贫血风险",
+    "department": "血液科",
+    "severity": "medium",
+    "keywords": ["乏力", "面色苍白", "头晕", "心慌", "月经过多", "贫血"],
+    "content": "乏力、面色苍白、头晕、心慌或月经过多可能提示贫血，需要血常规等检查。若明显胸闷、晕厥或出血不止，应急诊评估。",
+    "source": "https://medlineplus.gov/anemia.html"
+  },
+  {
+    "id": "disease_thyroid_hyper",
+    "category": "disease",
+    "title": "甲状腺功能亢进风险",
+    "department": "内分泌科",
+    "severity": "medium",
+    "keywords": ["怕热", "多汗", "心慌", "手抖", "消瘦", "甲亢"],
+    "content": "怕热、多汗、心慌、手抖、体重下降或情绪易激动，可能与甲状腺功能亢进有关，建议内分泌科评估甲状腺功能。",
+    "source": "https://medlineplus.gov/hyperthyroidism.html"
+  },
+  {
+    "id": "disease_kidney_stone",
+    "category": "disease",
+    "title": "肾结石风险",
+    "department": "泌尿外科",
+    "severity": "medium",
+    "keywords": ["腰痛", "绞痛", "血尿", "尿痛", "恶心", "肾结石"],
+    "content": "阵发性腰腹部绞痛、血尿、恶心或尿痛提示肾结石可能。若疼痛剧烈、发热或尿量明显减少，应泌尿外科或急诊评估。",
+    "source": "https://medlineplus.gov/kidneystones.html"
+  },
+  {
+    "id": "disease_tonsillitis",
+    "category": "disease",
+    "title": "扁桃体炎",
+    "department": "耳鼻喉科",
+    "severity": "medium",
+    "keywords": ["咽痛", "吞咽痛", "扁桃体肿大", "发热", "白点", "颈部淋巴结"],
+    "content": "咽痛、吞咽痛、发热、扁桃体肿大或表面白点提示扁桃体炎可能。若呼吸困难、吞咽困难明显或高热不退，应尽快就医。",
+    "source": "https://medlineplus.gov/tonsillitis.html"
+  }
+]

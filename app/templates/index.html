@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>智能医疗分诊与建议智能体</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="layout">
+    <section class="workspace">
+      <header class="topbar">
+        <div>
+          <h1>智能医疗分诊与建议智能体</h1>
+          <p>Chroma 向量库 + Ollama DeepSeek R1 + LangChain ReAct Tools</p>
+        </div>
+        <button id="metricsBtn" class="ghost">评测指标</button>
+      </header>
+
+      <form id="chatForm" class="composer">
+        <textarea id="query" placeholder="请输入患者症状描述，例如：发热咳嗽两天，肌肉酸痛，很乏力"></textarea>
+        <div class="controls">
+          <label><input id="useLlm" type="checkbox" checked> 使用 LLM</label>
+          <label><input id="useAgent" type="checkbox"> AgentExecutor</label>
+          <label><input id="showTrace" type="checkbox" checked> 显示轨迹</label>
+          <button id="clearSession" class="ghost" type="button">清空会话</button>
+          <button type="submit">发送问诊</button>
+        </div>
+      </form>
+
+      <section class="answer-panel">
+        <h2>对话记录</h2>
+        <div id="responseTime" class="meta">响应时间：-</div>
+        <div id="chatLog" class="chat-log">
+          <article class="message assistant">
+            <pre>等待输入...</pre>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <aside class="side">
+      <section>
+        <h2>检索证据</h2>
+        <div id="docs" class="stack"></div>
+      </section>
+      <section>
+        <h2>Agent 轨迹</h2>
+        <div id="trace" class="stack"></div>
+      </section>
+      <section>
+        <h2>系统指标</h2>
+        <pre id="metrics">点击“评测指标”查看。</pre>
+      </section>
+    </aside>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
