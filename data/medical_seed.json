@@ -30,6 +30,136 @@
     "source": "https://www.cdc.gov/flu/signs-symptoms/index.html"
   },
   {
+    "id": "triage_fever_headache",
+    "category": "triage_rule",
+    "title": "发热伴头痛初筛",
+    "department": "全科/呼吸内科",
+    "severity": "medium",
+    "keywords": ["发热", "发烧", "头痛", "头疼", "高热", "畏寒", "乏力"],
+    "content": "发热伴头痛常见于病毒性上呼吸道感染、流感样疾病等，需要结合体温、病程、精神状态和伴随症状判断。若出现持续高热、剧烈头痛、颈部僵硬、皮疹、意识改变、反复呕吐或症状加重，应尽快线下就医或急诊评估。",
+    "source": "system"
+  },
+  {
+    "id": "triage_adult_fever",
+    "category": "triage_rule",
+    "title": "成人发热初筛",
+    "department": "全科/发热门诊",
+    "severity": "medium",
+    "keywords": ["发热", "发烧", "体温高", "高热", "畏寒", "寒战", "退烧"],
+    "content": "成人发热需要结合体温数值、持续时间、精神状态和伴随症状判断。轻中度发热可先补液、休息、记录体温；若持续高热、呼吸困难、意识改变、严重头痛、皮疹、脱水或基础病患者发热，应尽快就医。",
+    "source": "https://medlineplus.gov/ency/article/003090.htm"
+  },
+  {
+    "id": "rule_headache_red_flags",
+    "category": "triage_rule",
+    "title": "头痛危险信号",
+    "department": "神经内科",
+    "severity": "high",
+    "keywords": ["头痛", "头疼", "剧烈头痛", "突发头痛", "发热", "颈部僵硬", "视物模糊", "呕吐"],
+    "content": "头痛若为突然发生的严重头痛，或伴高热、颈部僵硬、意识改变、说话不清、肢体无力、视力异常、反复呕吐或外伤后出现，需要尽快就医，严重时按急症处理。",
+    "source": "https://medlineplus.gov/ency/patientinstructions/000424.htm"
+  },
+  {
+    "id": "disease_pharyngitis",
+    "category": "disease",
+    "title": "咽炎/咽痛",
+    "department": "耳鼻喉科",
+    "severity": "low",
+    "keywords": ["咽痛", "喉咙痛", "嗓子疼", "吞咽痛", "声音嘶哑", "咽干"],
+    "content": "咽痛常见于病毒感染、上呼吸道感染或咽喉刺激，也可能与细菌感染有关。若咽痛超过数天不缓解、伴高热、吞咽困难、呼吸困难、明显脓点或颈部肿痛，应就医评估。",
+    "source": "https://medlineplus.gov/sorethroat.html"
+  },
+  {
+    "id": "rule_sore_throat_emergency",
+    "category": "triage_rule",
+    "title": "咽痛急症信号",
+    "department": "急诊科",
+    "severity": "high",
+    "keywords": ["喉咙痛", "咽痛", "呼吸困难", "吞咽困难", "流口水", "张口困难", "颈部肿胀"],
+    "content": "咽痛伴呼吸困难、明显吞咽困难、流口水、张口困难、颈部明显肿胀或精神状态变差时，需要警惕气道或深部感染风险，应尽快急诊评估。",
+    "source": "https://medlineplus.gov/ency/article/000655.htm"
+  },
+  {
+    "id": "disease_mouth_sores",
+    "category": "disease",
+    "title": "口腔溃疡/口腔黏膜破损",
+    "department": "口腔科",
+    "severity": "low",
+    "keywords": ["口腔溃疡", "口疮", "口腔疼痛", "口腔水泡", "口腔起泡", "嘴里起泡", "口腔黏膜", "牙龈疼"],
+    "content": "口腔内疼痛性小溃疡、水泡样破损或黏膜疼痛可见于口腔溃疡、局部刺激、病毒感染等。若范围较多、疼痛明显、反复发作、超过两周不愈合，或影响进食饮水，建议口腔科评估。",
+    "source": "https://medlineplus.gov/mouthdisorders.html"
+  },
+  {
+    "id": "disease_cold_sores",
+    "category": "disease",
+    "title": "口唇疱疹",
+    "department": "皮肤科/口腔科",
+    "severity": "low",
+    "keywords": ["口唇疱疹", "嘴唇水泡", "嘴角水泡", "口角水泡", "唇边水泡", "疱疹", "疼痛水泡"],
+    "content": "口唇或口周成簇小水泡、刺痛或灼痛可见于口唇疱疹。应避免抠破水泡、共用餐具或亲密接触；若反复发作、范围大、疼痛明显、免疫力低下或累及眼周，应皮肤科或口腔科就诊。",
+    "source": "https://medlineplus.gov/coldsores.html"
+  },
+  {
+    "id": "rule_oral_blister_warning",
+    "category": "triage_rule",
+    "title": "口腔水泡危险信号",
+    "department": "口腔科",
+    "severity": "medium",
+    "keywords": ["口腔水泡", "口腔起泡", "嘴里水泡", "很多水泡", "吞咽困难", "发热", "脱水", "眼睛疼", "皮疹"],
+    "content": "口腔水泡若数量很多、疼痛明显、伴发热、皮疹、眼部疼痛、吞咽困难、喝水困难、尿少或精神状态变差，需要尽快就医。成人可先口腔科评估，伴明显全身症状时可全科/急诊初筛。",
+    "source": "https://medlineplus.gov/mouthdisorders.html"
+  },
+  {
+    "id": "disease_acute_bronchitis",
+    "category": "disease",
+    "title": "急性支气管炎/咳嗽",
+    "department": "呼吸内科",
+    "severity": "medium",
+    "keywords": ["咳嗽", "咳痰", "胸闷", "气短", "支气管炎", "痰多"],
+    "content": "急性支气管炎常表现为咳嗽、咳痰、胸部不适，可在感冒后出现。若出现高热、呼吸困难、胸痛、血痰、基础肺病或症状持续加重，应到呼吸内科或急诊评估。",
+    "source": "https://medlineplus.gov/acutebronchitis.html"
+  },
+  {
+    "id": "rule_flu_warning",
+    "category": "triage_rule",
+    "title": "流感样症状危险信号",
+    "department": "急诊科",
+    "severity": "high",
+    "keywords": ["流感", "高热", "呼吸困难", "胸痛", "意识模糊", "持续呕吐", "好转后加重"],
+    "content": "流感样症状若伴呼吸困难、胸痛、意识模糊、持续呕吐、脱水，或症状一度好转后再次发热并咳嗽加重，需要尽快就医；高风险人群应更早咨询医生。",
+    "source": "https://www.cdc.gov/flu/signs-symptoms/index.html"
+  },
+  {
+    "id": "triage_vomiting_dehydration",
+    "category": "triage_rule",
+    "title": "呕吐与脱水风险",
+    "department": "消化内科",
+    "severity": "medium",
+    "keywords": ["呕吐", "恶心", "喝不进水", "尿少", "口干", "脱水", "头晕乏力"],
+    "content": "反复呕吐时重点关注补液和尿量。若喝不进水、尿明显减少、口干眼窝凹陷、头晕乏力、持续高热、血性呕吐或儿童/老人出现精神差，应尽快就医。",
+    "source": "https://www.nhs.uk/conditions/diarrhoea-and-vomiting/"
+  },
+  {
+    "id": "rule_diarrhea_bloody_stool",
+    "category": "triage_rule",
+    "title": "腹泻伴便血风险",
+    "department": "消化内科",
+    "severity": "high",
+    "keywords": ["腹泻", "便血", "血便", "黑便", "腹痛", "脱水", "持续高热"],
+    "content": "腹泻腹痛伴便血、黑便、持续高热、明显脱水、严重或持续加重腹痛时，提示需要排查肠道感染、出血或其他急腹症，应尽快到消化内科或急诊评估。",
+    "source": "https://www.nhs.uk/conditions/diarrhoea-and-vomiting/"
+  },
+  {
+    "id": "triage_primary_care",
+    "category": "triage_rule",
+    "title": "全科初筛建议",
+    "department": "全科/普通内科",
+    "severity": "low",
+    "keywords": ["不知道挂什么科", "哪个科", "哪个诊室", "挂什么号", "全科", "普通内科", "不舒服"],
+    "content": "症状不典型或多个系统症状混杂时，可优先选择全科/普通内科做初筛，由医生根据体征和基础检查再转至呼吸、消化、神经、心血管等专科。",
+    "source": "system"
+  },
+  {
     "id": "disease_common_cold",
     "category": "disease",
     "title": "普通感冒",

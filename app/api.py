@@ -59,6 +59,7 @@ async def record_response_time(request: Request, call_next):
 class ChatRequest(BaseModel):
     query: str = Field(..., min_length=2, max_length=1000)
     session_id: str | None = Field(default=None, max_length=80)
+    knowledge_mode: str = Field(default="rag", pattern="^(rag|llm)$")
     use_llm: bool = True
     use_agent_executor: bool = False
     show_trace: bool = True
@@ -96,7 +97,7 @@ def chat(payload: ChatRequest):
             "session_id": session_id,
             "answer": result["answer"],
             "trace": result["steps"] if payload.show_trace else [],
-            "docs": [_doc_to_dict(doc) for doc in docs],
+            "docs": [_doc_to_dict(doc) for doc in _visible_docs(docs)],
             "context": format_docs(docs),
             "response_time_ms": elapsed_ms,
         }
@@ -105,14 +106,18 @@ def chat(payload: ChatRequest):
     original_llm = agent.llm
     if not payload.use_llm:
         agent.llm = None
-    result = agent.ask(payload.query, show_trace=payload.show_trace)
+    result = agent.ask(
+        payload.query,
+        show_trace=payload.show_trace,
+        knowledge_mode=payload.knowledge_mode,
+    )
     agent.llm = original_llm
     elapsed_ms = round((time.perf_counter() - started_at) * 1000, 2)
     return {
         "session_id": session_id,
         "answer": result.answer,
         "trace": result.trace,
-        "docs": [_doc_to_dict(doc) for doc in result.docs],
+        "docs": [_doc_to_dict(doc) for doc in _visible_docs(result.docs)],
         "context": format_docs(result.docs),
         "response_time_ms": elapsed_ms,
         "agent_response_time_ms": result.response_time_ms,
@@ -156,6 +161,11 @@ def _doc_to_dict(doc):
         "source": doc.source,
         "content": doc.content,
     }
+
+
+def _visible_docs(docs):
+    visible = [doc for doc in docs if doc.keyword_hits or doc.score > 0]
+    return visible or docs[:1]
 
 
 def _append_response_time(record: dict) -> None:

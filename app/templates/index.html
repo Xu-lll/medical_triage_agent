@@ -20,6 +20,10 @@
       <form id="chatForm" class="composer">
         <textarea id="query" placeholder="请输入患者症状描述，例如：发热咳嗽两天，肌肉酸痛，很乏力"></textarea>
         <div class="controls">
+          <select id="knowledgeMode" title="问诊模式">
+            <option value="llm">纯 LLM 对话</option>
+            <option value="rag" selected>RAG 知识库增强</option>
+          </select>
           <label><input id="useLlm" type="checkbox" checked> 使用 LLM</label>
           <label><input id="useAgent" type="checkbox"> AgentExecutor</label>
           <label><input id="showTrace" type="checkbox" checked> 显示轨迹</label>

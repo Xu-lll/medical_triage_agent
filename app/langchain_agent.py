@@ -71,6 +71,7 @@ class LangChainMedicalAgent:
                 temperature=0.0,
                 num_ctx=4096,
             )
+        self.core.llm = self.llm
         self.tools = self._build_tools()
         runnable = create_react_agent(self.llm, self.tools, REACT_PROMPT)
         self.executor = AgentExecutor(
@@ -199,7 +200,8 @@ class LangChainMedicalAgent:
 
     def _tool_compose_answer(self, query: str) -> str:
         docs = self.last_docs or self.core.retriever.search(query, k=5)
-        return self.core._compose_answer(query, docs)
+        fallback = self.core._compose_dialog_answer(query, query, docs)
+        return self.core._llm_dialog_answer(query, query, docs, fallback) if self.core.llm else fallback
 
     @staticmethod
     def _serialize_steps(steps: list) -> list[dict]:

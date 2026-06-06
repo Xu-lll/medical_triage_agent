@@ -93,6 +93,15 @@ button.ghost {
   color: #184bbd;
 }
 
+select {
+  border: 1px solid #cfd8e6;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #172033;
+  padding: 9px 12px;
+  font: inherit;
+}
+
 .answer-panel {
   padding: 18px;
   flex: 1;

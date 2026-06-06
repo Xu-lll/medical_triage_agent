@@ -14,7 +14,7 @@ form.addEventListener("submit", async (event) => {
   if (!query) return;
 
   appendMessage("user", query);
-  const pendingMessage = appendMessage("assistant", "正在检索知识库并生成分诊建议...");
+  const pendingMessage = appendMessage("assistant", "正在理解你的描述，并结合上下文整理回复...");
   responseTimeEl.textContent = "响应时间：-";
   docsEl.innerHTML = "";
   traceEl.innerHTML = "";
@@ -23,6 +23,7 @@ form.addEventListener("submit", async (event) => {
   const payload = {
     query,
     session_id: sessionId,
+    knowledge_mode: document.getElementById("knowledgeMode").value,
     use_llm: document.getElementById("useLlm").checked,
     use_agent_executor: document.getElementById("useAgent").checked,
     show_trace: document.getElementById("showTrace").checked
